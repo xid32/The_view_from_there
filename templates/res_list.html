@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The View from There</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{url_for('static', filename ='styles/style.css')}}">
+</head>
+<body>
+<section class="ftco-section">
+    <div class="container">
+    <div id="section_1">
+    <div class="row justify-content-center">
+    <div class="col-md-6 text-center mb-5">
+    <h2 class="heading-section">Search results</h2>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+    <P align="left">Related Tweets： &nbsp; &nbsp;</P>
+    <div class="table-wrap">
+    <table class="table">
+    <thead class="thead-primary">
+    <tr>
+        <th>Country</th>
+        <th>Date</th>
+        <th>Language</th>
+        <th>Article</th>
+        <th>URL</th>
+    </tr>
+    </thead>
+    <tr>
+    <td>United States</td>
+    <td>{{res_1["Date"]}}</td>
+        <td>English</td>
+        <td>{{res_1["text"]}}</td>
+        <td><a href='{{res_1["url"]}}'> {{res_1["url"]}}</a></td>
+    </tr>
+    <tr>
+    <td>China</td>
+    <td>{{res_2["Date"]}}</td>
+        <td>Chinese</td>
+        <td>{{res_2["text"]}}</td>
+        <td><a href='{{res_2["url"]}}'> {{res_2["url"]}}</a></td>
+    </tr>
+        <tr>
+    <td>Russia</td>
+    <td>{{res_3["Date"]}}</td>
+        <td>Russian</td>
+        <td>{{res_3["text"]}}</td>
+        <td><a href='{{res_3["url"]}}'> {{res_3["url"]}}</a></td>
+    </tr>
+        <tr>
+    <td>Japan</td>
+    <td>{{res_4["Date"]}}</td>
+        <td>Japanese</td>
+        <td>{{res_4["text"]}}</td>
+        <td><a href='{{res_4["url"]}}'> {{res_4["url"]}}</a></td>
+    </tr>
+        <tr>
+    <td>Korean</td>
+    <td>{{res_5["Date"]}}</td>
+        <td>Korean</td>
+        <td>{{res_5["text"]}}</td>
+        <td><a href='{{res_5["url"]}}'> {{res_5["url"]}}</a></td>
+    </tr>
+    </table>
+
+    </div>
+
+    <div id="section_2">
+        <br>
+        <P align="left">Related News ： &nbsp; &nbsp;</P>
+    <table class="table">
+    <thead class="thead-primary">
+    <tr>
+    <th>Country</th>
+    <th>Date</th>
+        <th>Language</th>
+        <th>Article1</th>
+        <th>Article2</th>
+        <th>Article3</th>
+        <th>Article4</th>
+        <th>Article5</th>
+    </tr>
+    </thead>
+    <tr>
+    <td>United States</td>
+    <td>{{news_1[0]["Date"]}}</td>
+        <td>{{news_1[0]["Language"]}}</td>
+        <td><a href='{{news_1[0]["url"]}}'>{{news_1[0]["text"]}}</a></td>
+        <td><a href='{{news_1[1]["url"]}}'>{{news_1[1]["text"]}}</a></td>
+        <td><a href='{{news_1[2]["url"]}}'>{{news_1[2]["text"]}}</a></td>
+         <td><a href='{{news_1[3]["url"]}}'>{{news_1[3]["text"]}}</a></td>
+         <td><a href='{{news_1[4]["url"]}}'>{{news_1[4]["text"]}}</a></td>
+    </tr>
+    <tr>
+    <td>China</td>
+    <td>{{news_2[0]["Date"]}}</td>
+        <td>Chinese</td>
+        <td><a href='{{news_2[0]["url"]}}'>{{news_2[0]["text"]}}</a></td>
+        <td><a href='{{news_2[1]["url"]}}'>{{news_2[1]["text"]}}</a></td>
+        <td><a href='{{news_2[2]["url"]}}'>{{news_2[2]["text"]}}</a></td>
+        <td><a href='{{news_2[3]["url"]}}'>{{news_2[3]["text"]}}</a></td>
+        <td><a href='{{news_2[4]["url"]}}'>{{news_2[4]["text"]}}</a></td>
+    </tr>
+    <tr>
+    <td>Russia</td>
+    <td>{{news_3[0]["Date"]}}</td>
+        <td>Russian</td>
+        <td><a href='{{news_3[0]["url"]}}'>{{news_3[0]["text"]}}</a></td>
+        <td><a href='{{news_3[1]["url"]}}'>{{news_3[1]["text"]}}</a></td>
+        <td><a href='{{news_3[2]["url"]}}'>{{news_3[2]["text"]}}</a></td>
+        <td><a href='{{news_3[3]["url"]}}'>{{news_3[3]["text"]}}</a></td>
+        <td><a href='{{news_3[4]["url"]}}'>{{news_3[4]["text"]}}</a></td>
+    </tr>
+        <tr>
+    <td>Japan</td>
+    <td>{{news_4[0]["Date"]}}</td>
+        <td>Japanese</td>
+        <td><a href='{{news_4[0]["url"]}}'>{{news_4[0]["text"]}}</a></td>
+        <td><a href='{{news_4[1]["url"]}}'>{{news_4[1]["text"]}}</a></td>
+        <td><a href='{{news_4[2]["url"]}}'>{{news_4[2]["text"]}}</a></td>
+        <td><a href='{{news_4[3]["url"]}}'>{{news_4[3]["text"]}}</a></td>
+        <td><a href='{{news_4[4]["url"]}}'>{{news_4[4]["text"]}}</a></td>
+    </tr>
+    <tr>
+    <td>Korean</td>
+    <td>{{news_5[0]["Date"]}}</td>
+        <td>Korean</td>
+        <td><a href='{{news_5[0]["url"]}}'>{{news_5[0]["text"]}}</a></td>
+        <td><a href='{{news_5[1]["url"]}}'>{{news_5[1]["text"]}}</a></td>
+        <td><a href='{{news_5[2]["url"]}}'>{{news_5[2]["text"]}}</a></td>
+        <td><a href='{{news_5[3]["url"]}}'>{{news_5[3]["text"]}}</a></td>
+        <td><a href='{{news_5[4]["url"]}}'>{{news_5[4]["text"]}}</a></td>
+    </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+ </div>
+</div>
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" type= "text/css" href= "{{url_for('static', filename ='styles/index.css')}}">
+  <script crossorigin="anonymous" integrity="sha512-odXFR6jGqGLJay2LHI5hit0IEfyxJ2UexST/qvnljBPrbXMwU44CoVddZjD9EsrtS6bMOoz8lC2yU0nhyh9yyg==" src="https://lib.baomitu.com/echarts/5.0.0/echarts.common.js"></script>
+  <title>index</title>
+</head>
+<body>
+  <div class="loading">
+    <div class="wriggle">
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+    </div>
+    <div class="tip">&nbsp;&nbsp;Welcome to The View from There!</div>
+  </div>
+  <div class="content">
+    <nav class="nav1-show">
+      <h2 class="title">The View from There</h2>
+      <ul class="nav-ul">
+        <li class="nav-item"><a href="#Application">Search</a></li>
+        <li class="nav-item"><a href="#About">About</a></li>
+        <li class="nav-item"><a href="#Resources">Sources</a></li>
+        <li class="nav-item"><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="nav2-show">
+     <h2 class="title">The View from There</h2>
+    </nav>
+    <ul class="nav-ul">
+      <li class="nav-item"><a href="#Application">Search</a></li>
+      <li class="nav-item"><a href="#About">About</a></li>
+      <li class="nav-item"><a href="#Resources">Sources</a></li>
+      <li class="nav-item"><a href="#Contact">Contact</a></li>
+    </ul>
+
+    <section id="Application" class="showcase">
+      <div class="showcase-left">
+        <br><br><br> <br><br><br> <br><br><br><br><br><br><br><br>
+        <div class="showcase-left-title">Explore Our Application</div>
+        <div class="showcase-left-desc">Enter a keyword and explore news from around the world</div>
+      </div>
+      <div class="showcase-right">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="title">The News Gap closes Here</h1>
+        <br>
+        <form action="/search" method="post">
+        <p>
+        <input type="text" name="query" style="width: 80%; padding:10px; border-radius:20px; height: 50%;">
+        <input type="submit" name="submit" value="search" style="background: #571666; color: white; padding:10px; height: 50%; border-radius:20px; " >
+        </p>
+        <br><br>
+        <h1>Select language: </h1><br>
+        <label><input name="English" type="checkbox" value="" />English </label> &nbsp; &nbsp;
+        <label><input name="Chinese" type="checkbox" value="" />Chinese </label> &nbsp; &nbsp;
+        <label><input name="Russian" type="checkbox" value="" />Hindi </label> &nbsp; &nbsp;
+        <label><input name="Japanese" type="checkbox" value="" />Japanese </label> &nbsp; &nbsp;
+        <label><input name="Korean" type="checkbox" value="" />Korean </label> &nbsp; &nbsp;
+        </form>
+        <br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <br><br><br><br><br><br>
+    <section id="About" class="showcase">
+      <div class="showcase-left">
+      <div class="left">
+        <br><br><br><br><br><br>
+        <a href="https://knightlab.northwestern.edu/"><div class="head-img"></div><a/>
+        <a href="https://knightlab.northwestern.edu/"><h1 class="name">Knight Lab at NU</h1><a/>
+        <!--<h4 class="desc">Creative</h4>-->
+        <!--<a href="https://www.northwestern.edu/"><h4 class="desc2">Northwestern1 University</h4><a/>-->
+      </div>
+      </div>
+      <br>
+      <div class="showcase-right">
+      <div class="right">
+        <br>
+        <h1 class="biography-title">About</h1>
+        <br><br><br>
+        <section class="biography">We are living in an increasingly divided world, where the news and information we have access to differs greatly depending on which part of the globe we live in. <br><br>Our goal with The View From There is to take the first step in bridging this gap. Here you can find news stories from news organizations across the world to compare headlines and perspectives on international news events.
+        </section>
+        <section class="other-info">
+          <div class="interests">
+            <h2>Tools Used</h2>
+            <ul class="interests-ul">
+              <li class="interests-item">Flask</li>
+              <li class="interests-item">Googletrans</li>
+              <li class="interests-item">Requests</li>
+              <li class="interests-item">Nltk</li>
+              <li class="interests-item">Bs4(BeautifulSoup)</li>
+              <li class="interests-item">Gclientnews</li>
+              <li class="interests-item">Google Search</li>
+              <li class="interests-item">Spacy</li>
+            </ul>
+          </div>
+          <div class="education">
+            <h2>Developer</h2>
+            <ul class="education-ul">
+              <li class="education-item">
+                <img src="static/images/graduation-cap.svg">
+                <div class="education-desc">
+                  <div class="time">Xingjian Diao</div>
+                  <div class="school">M.S. in Computer Science, Northwestern University</div>
+                </div>
+              </li>
+              <li class="education-item">
+                <img src="static/images/graduation-cap.svg">
+                <div class="education-desc">
+                  <div class="time">Yu Cai</div>
+                  <div class="school">M.S. in Journalism, Northwestern University</div>
+                </div>
+              </li>
+              <li class="education-item">
+                <img src="static/images/graduation-cap.svg">
+                <div class="education-desc">
+                  <div class="time">Anandita Bhalerao</div>
+                  <div class="school">M.S. in Journalism, Northwestern University</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    </section>
+    
+    <section id="Resources" class="showcase">
+      <div class="showcase-left">
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="showcase-left-title">Sources</div>
+        <div class="showcase-left-desc">Our searching results are from these sources</div>
+      </div>
+      <div class="showcase-right">
+        <br><br><br><br><br><br><br><br><br><br>
+        <div id="main" style="width: 600px; height:400px;"></div>
+      </div>
+    </section>
+
+    <section id="Contact" class="showcase">
+      <div class="showcase-left">
+        <div class="showcase-left-title">Contact</div>
+      </div>
+      <div class="showcase-right">
+        <ul class="contact-ul">
+          <li class="contact-item"><img class="contact-svg" src="static/images/email-svgrepo-com2.svg" alt=""><a href="mailto:xingjiandiao2022@u.northwestern.edu">xingjiandiao2022@u.northwestern.edu</a></li>
+          <li class="contact-item"><img class="contact-svg" src="static/images/email-svgrepo-com2.svg" alt=""><a href="mailto:ananditabhalerao2021@u.northwestern.edu">ananditabhalerao2021@u.northwestern.edu</a></li>
+          <li class="contact-item"><img class="contact-svg" src="static/images/email-svgrepo-com2.svg" alt=""><a href="mailto:yucai2021@u.northwestern.edu">yucai2021@u.northwestern.edu</a></li>
+          <!--<li class="contact-item"><img class="contact-svg" src="static/images/phone-svgrepo-com.svg" alt=""><a href="#Contact">412-370-0998</a></li>-->
+        </ul>
+      </div>
+    </section>
+    <footer> Xingjian Diao © 2021 - The View From There was developed by students at Northwestern University’s Knight Lab as part of the Fall 2021 Journalism and Technology course.</footer>
+  </div>
+  <script src="{{ url_for('static', filename= 'js/index.js')}}"></script>
+</body>
+</html>
