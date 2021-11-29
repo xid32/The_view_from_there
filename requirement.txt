@@ -1,0 +1,8 @@
+Flask==2.0.2
+gnewsclient==1.12
+google-auth==1.30.0
+google-auth-oauthlib==0.4.1
+google-pasta==0.2.0
+google-trans-new==1.1.9
+googletrans==4.0.0rc1
+PyExecJS==1.5.1
